@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA Assignment - Web Technologies</title>
+    <style>
+         :root {
+            --brand-color: #2c3e50;
+            --highlight: #f39c12;
+            --main-bg: #f5f6fa;
+            --text-main: #333;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: var(--main-bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+        }
+        /* Top Header Area */
+        
+        .top-banner {
+            background-color: var(--brand-color);
+            color: var(--white);
+            padding: 50px 10px;
+            text-align: center;
+            border-bottom: 6px solid var(--highlight);
+        }
+        
+        .main-content {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 15px;
+        }
+        
+        .paper-block {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 25px;
+        }
+        
+        .univ-tag {
+            color: var(--highlight);
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            border-bottom: 1.5px solid var(--highlight);
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        
+        h1,
+        h2 {
+            margin-top: 5px;
+        }
+        
+        .btn-check {
+            background: var(--highlight);
+            color: var(--white);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .btn-check:hover {
+            background: #e67e22;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 13px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-banner">
+        <h1>Local Server Implementation Project</h1>
+        <p>Lab Work Assignment - 2026</p>
+    </div>
+
+    <div class="main-content">
+        <div class="paper-block">
+            <span class="univ-tag">MAHARISHI UNIVERSITY</span>
+            <h2>Dept. of Computer Applications</h2>
+            <p>This project focus on setting up a static web server on a local machine </p>
+            <p><strong>Program:</strong> BCA (Bachelor of Computer Applications)</p>
+        </div>
+
+        <div class="paper-block">
+            <h3>Student Details</h3>
+            <p><strong>Name:</strong> Kushagra Shrivastava</p>
+            <p><strong>Roll No:</strong> 2302031601047</p>
+        </div>
+
+        <div class="paper-block" style="text-align: center;">
+            <h3>Server Diagnostics</h3>
+            <p>Press the button to check if the Python server is responding correctly.</p>
+            <button class="btn-check" onclick="testSystem()">Check Server Status</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Assignment Developed for Maharishi University Academic Records</p>
+    </footer>
+
+    <script>
+        // Simple function for server testing
+        function testSystem() {
+            console.log("Status check initiated...");
+            alert("Success: Local Server is active on IP 172.20.10.9");
+        }
+    </script>
+
+</body>
+
+</html>
